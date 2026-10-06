@@ -6,6 +6,8 @@ import {defineConfig} from 'vite';
 export default defineConfig(() => {
   return {
     plugins: [react(), tailwindcss()],
+    base: '/Laboratorium-Cilik-Fotosintesis/',
+})
     resolve: {
       alias: {
         '@': path.resolve(__dirname, '.'),
