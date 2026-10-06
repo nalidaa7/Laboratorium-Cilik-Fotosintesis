@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Fredoka", system-ui, sans-serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, sans-serif;
+}
+
+@keyframes rise {
+  0% {
+    transform: translateY(20px) scale(0.8);
+    opacity: 0;
+  }
+  30% {
+    opacity: 0.9;
+  }
+  80% {
+    transform: translateY(-80px) scale(1.1);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(-110px) scale(1.2);
+    opacity: 0;
+  }
+}
+
+@keyframes wave {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-16deg);
+  }
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: -20;
+  }
+}
+
+.animate-rise {
+  animation: rise 2.2s ease-in infinite;
+}
+
+.animate-wave {
+  animation: wave 1.6s ease-in-out infinite;
+}
+
+@media print {
+  body {
+    background: white !important;
+  }
+  header, footer, nav, button {
+    display: none !important;
+  }
+}

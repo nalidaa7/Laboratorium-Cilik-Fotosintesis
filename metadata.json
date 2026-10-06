@@ -1,0 +1,6 @@
+{
+  "name": "Petualangan Fotosintesis - Laboratorium Cilik",
+  "description": "Aplikasi edukasi sains interaktif untuk anak-anak: simulasi fotosintesis dengan pengaturan cahaya, air, dan CO2 bersama Koko si Daun, mikroskop kloroplas, kuis interaktif, dan sertifikat ilmuwan cilik.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
